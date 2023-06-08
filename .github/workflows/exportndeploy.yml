@@ -54,7 +54,7 @@ jobs:
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
-        environment-url: ${{env.CLIENT_SECRET}}
+        environment-url:  ${{env.ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.CLIENT_SECRET }}
         tenant-id: ${{env.TENANT_ID}}
