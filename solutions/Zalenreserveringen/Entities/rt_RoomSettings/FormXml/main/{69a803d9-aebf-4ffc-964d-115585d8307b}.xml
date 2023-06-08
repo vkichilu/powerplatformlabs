@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{69a803d9-aebf-4ffc-964d-115585d8307b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{2b033e61-9e46-47e5-aa21-79a04306da60}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{914da4c2-3e89-40b0-995c-5204f2e54c25}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{19633783-5908-40cd-bf41-e8570200d5e7}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e5e8e3e7-b4f7-46d7-852d-0d251f54447f}">
+                        <labels>
+                          <label description="Eigenaar" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80a5753e-cbec-40ed-a055-44939a3c4e5b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Max Participants" languagecode="1033" />
+                        </labels>
+                        <control id="rt_maxparticipants" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="rt_maxparticipants" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fd7082a4-99fa-4074-8e9e-7a9d5456faf5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Setup Type" languagecode="1033" />
+                        </labels>
+                        <control id="rt_setuptype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="rt_setuptype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{c642d672-c2cc-4b62-be9d-810a9939a5d6}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Room" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>rt_room</TargetEntityType>
+                            <ViewId>{C2D07879-6F6B-4A7D-B452-21B3761B57FC}</ViewId>
+                            <ViewIds>{C2D07879-6F6B-4A7D-B452-21B3761B57FC}</ViewIds>
+                            <RelationshipName>rt_Room_rt_RoomSettings_rt_RoomSettings</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{4b918c40-6c66-46d9-a36e-bbd411b4e8a5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{19347284-5f00-430d-930a-cfd1469c27f3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc6f15a3-6c44-43b8-b41b-5db154d59e1b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b76828e6-9f04-49eb-bfea-47d88c55c5c7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{efc622ca-3ef4-4b87-9a49-57cf466216c2}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ff6d4499-78f1-47a7-94f3-711c36c9de50}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a8b5510b-7de0-4b39-8419-8d3be89f621c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{782e6923-ec77-4a9c-900c-05c22fd3448c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informatie" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Een formulier voor deze entiteit." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

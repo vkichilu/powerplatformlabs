@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{27bd8b75-551d-48aa-9b0b-9ffbf5314b8b}</savedqueryid>
+    <layoutxml>
+      <grid name="rt_mainreservations" jump="rt_name" select="1" icon="1" preview="1">
+        <row name="rt_mainreservation" id="rt_mainreservationid">
+          <cell name="rt_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>2</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rt_mainreservation">
+          <attribute name="rt_mainreservationid" />
+          <attribute name="rt_name" />
+          <attribute name="createdon" />
+          <order attribute="rt_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Gekoppelde weergave van MainReservation" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,184 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "rt_Dataverse"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "7f9c19d7-dcdb-4010-b245-aeca587f5059"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "title": "Participants",
+                  "type": "number",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter a number",
+                  "x-ms-content-hint": "NUMBER"
+                },
+                "text": {
+                  "title": "Location",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_1": {
+                  "title": "StartTime",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_2": {
+                  "title": "EndTime",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                },
+                "text_3": {
+                  "title": "RoomType",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "number",
+                "text",
+                "text_1",
+                "text_2",
+                "text_3"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "401b61a5-64b5-4a08-bc73-a583f33e9fc0"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "rt_rooms",
+              "$select": "rt_name,rt_roomid,rt_maxparticipants",
+              "fetchXml": "<fetch count=\"50\" distinct=\"true\">\n  <entity name=\"rt_room\">\n    <attribute name=\"rt_name\" />\n    <attribute name=\"rt_maxparticipants\" />\n    <attribute name=\"rt_roomid\" />\n    <attribute name=\"rt_roomtype\" />\n    <order attribute=\"rt_name\" />\n    <order attribute=\"rt_maxparticipants\" />\n    <link-entity name=\"rt_reservation\" from=\"rt_room\" to=\"rt_roomid\" link-type=\"outer\" alias=\"reservations\">\n      <filter type=\"or\">\n        <condition attribute=\"rt_endtime\" operator=\"between\">\n          <value>@{triggerBody()['text_1']}</value>\n          <value>@{triggerBody()['text_2']}</value>\n        </condition>\n        <condition attribute=\"rt_starttime\" operator=\"between\">\n          <value>@{triggerBody()['text_1']}</value>\n          <value>@{triggerBody()['text_2']}</value>\n        </condition>\n        <filter type=\"and\">\n          <condition attribute=\"rt_starttime\" operator=\"lt\" value=\"@{triggerBody()['text_1']}\" />\n          <condition attribute=\"rt_endtime\" operator=\"ge\" value=\"@{triggerBody()['text_2']}\" />\n        </filter>\n      </filter>\n    </link-entity>\n    <filter type=\"and\">\n      <condition entityname=\"reservations\" attribute=\"rt_name\" operator=\"null\" />\n      <condition attribute=\"rt_maxparticipants\" operator=\"ge\" value=\"@{triggerBody()['number']}\" />\n      <condition attribute=\"rt_location\" operator=\"eq\" value=\"@{triggerBody()['text']}\" />\n      <condition attribute=\"rt_roomtype\" operator=\"eq\" value=\"@{triggerBody()['text_3']}\" />\n    </filter>\n  </entity>\n</fetch>"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Response": {
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "464213a9-e7ec-4e36-96f3-1dab82bb5214"
+          },
+          "type": "Response",
+          "kind": "Http",
+          "inputs": {
+            "statusCode": 200,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "body": "@outputs('List_rows')?['body/value']",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "@@odata.type": {
+                    "type": "string"
+                  },
+                  "@@odata.id": {
+                    "type": "string"
+                  },
+                  "@@odata.etag": {
+                    "type": "string"
+                  },
+                  "@@odata.editLink": {
+                    "type": "string"
+                  },
+                  "rt_name": {
+                    "type": "string"
+                  },
+                  "rt_maxparticipants@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "rt_maxparticipants": {
+                    "type": "integer"
+                  },
+                  "rt_roomid@odata.type": {
+                    "type": "string"
+                  },
+                  "rt_roomid": {
+                    "type": "string"
+                  },
+                  "rt_roomtype@OData.Community.Display.V1.FormattedValue": {
+                    "type": "string"
+                  },
+                  "rt_roomtype": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "@@odata.type",
+                  "@@odata.id",
+                  "@@odata.etag",
+                  "@@odata.editLink",
+                  "rt_name",
+                  "rt_maxparticipants@OData.Community.Display.V1.FormattedValue",
+                  "rt_maxparticipants",
+                  "rt_roomid@odata.type",
+                  "rt_roomid",
+                  "rt_roomtype@OData.Community.Display.V1.FormattedValue",
+                  "rt_roomtype"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

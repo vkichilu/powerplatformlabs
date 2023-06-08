@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{55f17d81-2b61-4a6d-8a43-eb51232fc960}</savedqueryid>
+    <layoutxml>
+      <grid name="rt_roomsettingses" jump="rt_name" select="1" icon="1" preview="0">
+        <row name="rt_roomsettings" id="rt_roomsettingsid">
+          <cell name="rt_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rt_roomsettings">
+          <attribute name="rt_roomsettingsid" />
+          <attribute name="rt_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Room Settings Opzoekweergave" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

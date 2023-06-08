@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0fa75d59-9296-4fca-b2e4-eeeaad647a25}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{6f5e7f5f-c1b8-48cf-a4e0-5fe5bac81db1}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c48401ec-99a6-4b09-aa29-62abe9f43132}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bb6d75e4-855f-4b9a-ac85-1d5bc39b9328}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da5e26c2-5a52-4fdf-a805-5a696b6fb8bb}">
+                        <labels>
+                          <label description="Eigenaar" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{edf606cb-a932-4b4c-a35b-6e77ac76f214}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Postalcode" languagecode="1033" />
+                        </labels>
+                        <control id="rt_postalcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_postalcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8e8da16-1de7-46df-b1c3-4664e2e09c90}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Street" languagecode="1033" />
+                        </labels>
+                        <control id="rt_street" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_street" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{654634d7-b236-43e0-a5a9-13219bcef489}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="rt_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="rt_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{477ee57c-c825-4bd6-8f04-c9a6c8d36022}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Company Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_companyname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_companyname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28a83dca-4370-4470-aa49-a9c3a760de51}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Debit Number" languagecode="1033" />
+                        </labels>
+                        <control id="rt_debitnumber" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="rt_debitnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c819f3b-b29d-4025-aa63-450fbc190730}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Telephone" languagecode="1033" />
+                        </labels>
+                        <control id="rt_telephone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_telephone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{26afe270-9bb6-49c7-8c6a-8c2554a5a806}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoice City" languagecode="1033" />
+                        </labels>
+                        <control id="rt_invoicecity" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_invoicecity" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d541562e-b676-4347-a6f1-956729420251}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ca5bd0f2-682f-454b-aaa3-bb4a47de620f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f4567187-459e-4c2b-8304-c254165a8fa5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c9a85005-e1df-4401-abdb-46b66847c514}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{21711cd6-ad87-42ba-8963-1fec36991099}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{8b32dce8-fdf0-42ca-9410-eecb57d42a88}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{faa1ca7c-165b-4a7d-8b82-41817a4f86dc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5b84fbdc-7f06-4f52-8072-dcd58106a1e2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informatie" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Een formulier voor deze entiteit." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

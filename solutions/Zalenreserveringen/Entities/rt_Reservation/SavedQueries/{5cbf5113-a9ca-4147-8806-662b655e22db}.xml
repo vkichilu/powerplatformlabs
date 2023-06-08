@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5cbf5113-a9ca-4147-8806-662b655e22db}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="rt_name" select="1" icon="1" preview="1">
+        <row name="result" id="rt_reservationid">
+          <cell name="rt_name" width="300" />
+          <cell name="rt_reservationstatus" width="145" />
+          <cell name="rt_participants" width="107" />
+          <cell name="rt_starttime" width="100" />
+          <cell name="rt_endtime" width="100" />
+          <cell name="rt_roomtype" width="106" />
+          <cell name="rt_room" width="100" />
+          <cell name="rt_mainreservation" width="140" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="rt_reservation">
+          <attribute name="rt_reservationid" />
+          <attribute name="rt_name" />
+          <order attribute="rt_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="rt_endtime" />
+          <attribute name="rt_starttime" />
+          <attribute name="rt_roomtype" />
+          <attribute name="rt_room" />
+          <attribute name="rt_mainreservation" />
+          <attribute name="rt_participants" />
+          <attribute name="rt_reservationstatus" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Actieve Reservation" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

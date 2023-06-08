@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{91f8b9d2-b8fb-ed11-8849-002248999646}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{5d14bcf9-7077-4e59-ae11-3c5e302995af}">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{1e557dfa-d5ff-4446-b864-caf5676cfc60}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dfac53c7-ad00-4362-b9e6-1315fab647c5}" locklevel="0" colspan="1" rowspan="1" labelid="{5296978a-42a1-4f55-932b-d5a08076c08d}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="rt_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc64a793-5973-42d3-a91b-0e24ca9a4bd6}" locklevel="0" colspan="1" rowspan="1" labelid="{6003108e-d508-4ca4-9c8f-9d1f415f3b91}">
+                        <labels>
+                          <label description="Max Participants" languagecode="1033" />
+                        </labels>
+                        <control id="rt_maxparticipants" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="rt_maxparticipants" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6874627e-cdbf-47de-8c0e-4f92dc552baa}" locklevel="0" colspan="1" rowspan="1" labelid="{85608f8f-a9fd-412c-b06d-a458813c4de8}">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="rt_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="rt_location" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41a942c6-6f26-40f9-8c8e-4cbfa2070f05}" locklevel="0" colspan="1" rowspan="1" labelid="{bcef78f5-8953-46dd-bc76-afeaa1d61d34}">
+                        <labels>
+                          <label description="Room Type" languagecode="1033" />
+                        </labels>
+                        <control id="rt_roomtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="rt_roomtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37f71c93-1f69-45ce-a7e3-38467c705e91}" locklevel="0" colspan="1" rowspan="1" labelid="{e2e9e599-cf22-430a-ab2b-969ef404a07f}">
+                        <labels>
+                          <label description="Equipment" languagecode="1033" />
+                        </labels>
+                        <control id="rt_equipment" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="rt_equipment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{56eb47b5-0963-41da-b183-265af91175d7}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{0b87f772-32a6-4c8b-883f-d7286d47e9ae}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{f78954f5-3373-4b80-bab6-898e68c79284}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Room quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

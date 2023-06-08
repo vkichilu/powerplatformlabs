@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{98dc4058-de8f-489b-af30-9f3c9f2c1250}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{2afa7aab-3385-4f4e-8d6c-a4b7508c99d5}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{20a4d2f6-0cbf-43d7-b979-e6cd4470116f}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7f0591be-92c2-4a43-b595-bbe26e5da9b7}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b77fc08-1f7b-407f-ab7c-bb9fcc212021}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="rt_location" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="rt_location" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c440501a-9b84-4e54-957a-40ce070cf6ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Room Type" languagecode="1033" />
+                        </labels>
+                        <control id="rt_roomtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="rt_roomtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{41244762-b79b-45cc-a689-7cdb55d118f4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Max Participants" languagecode="1033" />
+                        </labels>
+                        <control id="rt_maxparticipants" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="rt_maxparticipants" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="9029fd87-b840-4445-b518-68541deb1f35" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7253923a-72da-4b2b-ae85-bd8cfc1317ca}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Equipment" languagecode="1033" />
+                        </labels>
+                        <control id="rt_equipment" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="rt_equipment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_4" id="2e12cb59-4394-4de2-920d-b263b2e70e4c" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{ba93da8e-63c6-42da-a464-3b752876abf8}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Room Settings" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>rt_roomsettings</TargetEntityType>
+                            <ViewId>{624EAA64-EE01-48E1-821B-64EFD4B9F0DB}</ViewId>
+                            <ViewIds>{624EAA64-EE01-48E1-821B-64EFD4B9F0DB}</ViewIds>
+                            <RelationshipName>rt_Room_rt_RoomSettings_rt_RoomSettings</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{f599627e-27c4-4d62-9515-6791adf9d6cf}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{56ade603-ad95-4f68-b8b8-5253699acfef}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e360d8e6-5dab-48c9-aa0e-2d5b0871f69d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{35f53bee-585f-48a5-9cac-f79af9fd3f65}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a123c281-d103-47be-8eb8-9c6287d3d8bf}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Eigenaar" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{3166df67-1606-4320-967d-a6c936982aa0}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{64725d11-4f8e-41a9-ab56-fbab2d283f83}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a13a664d-1a39-4249-a19c-1ec6d2e34ca4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5390810e-3a16-4002-8332-b25ca2d6832b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informatie" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Een formulier voor deze entiteit." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,32 @@
+<appaction uniquename="rt__NewMainReservatio!bcc679bf976d449291fc0e00a183d0ea!rt_TechCenterReserveringen!rt_mainreservation!1">
+  <appmoduleid>
+    <uniquename>rt_TechCenterReserveringen</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="New Main Reservation">
+    <label description="New Main Reservation" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>5.0000000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>rt_mainreservation</logicalname>
+  </contextentity>
+  <contextvalue>rt_mainreservation</contextvalue>
+  <fonticon>$clientsvg:Add</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>1</location>
+  <name>NewMainReservatio!bcc679bf976d449291fc0e00a183d0ea</name>
+  <onclickeventjavascriptfunctionname>openMainReservationCustomPage</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>5e7ad503-3801-ee11-8f6e-000d3a3374c5</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

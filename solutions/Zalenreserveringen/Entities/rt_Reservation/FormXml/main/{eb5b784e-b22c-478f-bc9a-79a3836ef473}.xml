@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eb5b784e-b22c-478f-bc9a-79a3836ef473}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{c5216d86-7a0e-4469-aec8-c57f8eefedb3}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{b892f31e-236e-4476-a096-54785bf7dc2a}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7cdb5f9e-4c2f-4826-9806-3765fc4a5f86}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="rt_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="rt_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fddc8fa7-33da-4f29-987a-b1cda7bfd702}">
+                        <labels>
+                          <label description="Eigenaar" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ed713b8-8c19-4eaf-8798-8bf375e73a09}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Main Reservation" languagecode="1033" />
+                        </labels>
+                        <control id="rt_mainreservation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="rt_mainreservation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a90526b9-44b4-4d66-988e-60f498b4f39e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Reservation Status" languagecode="1033" />
+                        </labels>
+                        <control id="rt_reservationstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="rt_reservationstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3cb630f4-88e6-4543-85ed-c2e5d8fc1278}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Room" languagecode="1033" />
+                        </labels>
+                        <control id="rt_room" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="rt_room" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{736d4604-0bf3-46f8-925f-313f0f849dad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Room Type" languagecode="1033" />
+                        </labels>
+                        <control id="rt_roomtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="rt_roomtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bae4a74-0ffa-423f-8239-e5e684f05070}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Start time" languagecode="1033" />
+                        </labels>
+                        <control id="rt_starttime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="rt_starttime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{44d0fdf2-b24c-4ad3-bd84-16669cb2d9e5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="End time" languagecode="1033" />
+                        </labels>
+                        <control id="rt_endtime" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="rt_endtime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ef3cfb9-12a1-4e2d-887f-2ab5da91f6fd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Participants" languagecode="1033" />
+                        </labels>
+                        <control id="rt_participants" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="rt_participants" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{a39908d6-0b4a-44ff-bca5-5e27e09394af}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{30c12dbf-6e66-4a7d-b060-31629eb3eeb5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{18271c89-83e2-405c-a539-4e485342ec72}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d551e883-487f-4612-92fe-6aed26f2bcc3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{2ae53b7f-4c2a-4600-aaaa-0a70dfeeec26}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{72bea6f3-b17f-4896-ab09-7c0148c9631f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{70f94d08-eb59-4904-b45a-9a02fcdde547}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{af4aeb93-cb4d-4fd9-b2da-489e02df638a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informatie" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Een formulier voor deze entiteit." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

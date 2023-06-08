@@ -1,0 +1,20 @@
+function openMainReservationCustomPage() {
+
+    var pageInput = {
+        pageType: "custom",
+        name: "rt_mainreservation_543e2",
+    };
+    var navigationOptions = {
+        target: 1
+    };
+    Xrm.Navigation.navigateTo(pageInput, navigationOptions)
+        .then(
+            function () {
+                // Called when page opens
+            }
+        ).catch(
+            function (error) {
+                // Handle error
+            }
+        );
+}
